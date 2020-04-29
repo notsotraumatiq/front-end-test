@@ -4,7 +4,7 @@ import Images from "./Components/Images/Images";
 import axiosInstance from "./axios-flickr";
 
 import "./App.css";
-import { Route } from "react-router";
+import { Route } from "react-router-dom";
 
 class App extends Component {
   state = { photos: [], error: false };
@@ -29,6 +29,7 @@ class App extends Component {
         <div>
           <Route
             path="/"
+            exact
             render={() => <SearchBar userSubmit={this.onSearchSubmit} />}
           ></Route>
           {/* <SearchBar userSubmit={this.onSearchSubmit} /> */}
