@@ -1,0 +1,26 @@
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-origin: padding-box;
+}
+
+.inputStyle {
+  padding: 3px;
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+  margin: 4px;
+  box-shadow: rgb(47, 92, 216);
+}
+.Btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(47, 92, 216);
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}

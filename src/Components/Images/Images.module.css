@@ -1,0 +1,19 @@
+.image__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  margin: 5px;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.image__list img {
+  width: 250px;
+}
+
+.Btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(47, 92, 216);
+  vertical-align: bottom;
+}
