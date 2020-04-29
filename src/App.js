@@ -4,6 +4,7 @@ import Images from "./Components/Images/Images";
 import axiosInstance from "./axios-flickr";
 
 import "./App.css";
+import { Route } from "react-router";
 
 class App extends Component {
   state = { photos: [], error: false };
@@ -24,10 +25,16 @@ class App extends Component {
   };
   render() {
     return (
-      <div>
-        <SearchBar userSubmit={this.onSearchSubmit} />
-        <Images data={this.state.photos} />
-      </div>
+      <React.Fragment>
+        <div>
+          <Route
+            path="/"
+            render={() => <SearchBar userSubmit={this.onSearchSubmit} />}
+          ></Route>
+          {/* <SearchBar userSubmit={this.onSearchSubmit} /> */}
+          <Images data={this.state.photos} />
+        </div>
+      </React.Fragment>
     );
   }
 }
